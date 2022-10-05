@@ -1,7 +1,7 @@
 :root {
     /* CSS HEX */
     --pale-silver: #C7BFB9ff;
-    --eerie-black: #101211ff;
+    --eerie-black: rgb(17, 19, 18);
     --granite-gray: #65625Eff;
     --ruby-red: rgb(163, 46, 50);
     --gray-web: #788592;
@@ -71,9 +71,10 @@ header h1 {
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 
-img {
+#about img {
     display: block;
     max-width: 400px;
     max-height: 400px;
@@ -108,3 +109,53 @@ img {
 p span {
     color: var(--ruby-red);
 }
+
+.divider {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+    background-color: var(--eerie-black);
+}
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+.card {
+    position: relative;
+    display: block;
+    width: 500px;
+    margin: 50px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    /* margin: 30px; */
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: var(--eerie-black);
+    background: rgb(17, 19, 18, 0.7);
+    width: 92%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: var(--pale-silver);
+    font-size: 2rem;
+    padding: 4%;
+    text-align: center;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+/* 
+#first-project {
+    flex-grow: 2;
+} */

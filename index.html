@@ -15,12 +15,13 @@
     </head>
     <body>
         <!-- Side navigation bar -->
-        <nav id="mySideNav">
+        <nav>
             <a href="#about">about</a>
-            <a href="#">projects</a>
+            <a href="#projects">projects</a>
             <a href="#">contact</a>
         </nav>
         
+        <!-- makes content easier to style separately from nav -->
         <main>
             <header>
                 <h1>i'm jacob meyers!</h1>
@@ -37,7 +38,21 @@
                         consectetur minim.
                     </p>
                 </section>
-                <div class="divider"></div>
+                <!-- <div class="divider"></div> -->
+                <section id="projects">
+                    <div class="card" id="first-project">
+                        <img src="./assets/images/code-refactoring.png" alt="Website with info about a web dev company.">
+                        <div class="overlay">Code Refactoring</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/code-refactoring.png" alt="Website with info about a web dev company.">
+                        <div class="overlay">Code Refactoring</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/code-refactoring.png" alt="Website with info about a web dev company.">
+                        <div class="overlay">Code Refactoring</div>
+                    </div>
+                </section>
             </body>
         </main>
     </body>
