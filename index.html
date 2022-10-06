@@ -18,13 +18,13 @@
         <nav>
             <a href="#about">about</a>
             <a href="#projects">projects</a>
-            <a href="#">contact</a>
+            <a href="#contact">contact</a>
         </nav>
         
         <!-- makes content easier to style separately from nav -->
         <main>
             <header>
-                <h1>i'm jacob meyers!</h1>
+                <h1>i'm jacob meyers!</h1> 
             </header>
             <body>
                 <section id="about">
@@ -40,18 +40,40 @@
                 </section>
                 <!-- <div class="divider"></div> -->
                 <section id="projects">
-                    <div class="card" id="first-project">
-                        <img src="./assets/images/code-refactoring.png" alt="Website with info about a web dev company.">
-                        <div class="overlay">Code Refactoring</div>
+                    <header><h2>projects</h2></header>
+                    <div class="projects-container">
+                        <div class="first-project">
+                            <div class="card">
+                                <a href="https://vlad-kronk.github.io/code-refactor" target="_blank">
+                                    <img src="./assets/images/code-refactoring.png"
+                                    alt="Website with info about a web dev company.">
+                                </a>
+                                <div class="overlay">code refactoring</div>
+                            </div>
+                        </div>
+                        <div class="other-projects">
+                            <div class="card">
+                                <img src="https://www.placecage.com/700/500" alt="Website with info about a web dev company.">
+                                <div class="overlay">placeholder</div>
+                            </div>
+                            <div class="card">
+                                <img src="https://www.placecage.com/700/500" alt="Website with info about a web dev company.">
+                                <div class="overlay">placeholder</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="./assets/images/code-refactoring.png" alt="Website with info about a web dev company.">
-                        <div class="overlay">Code Refactoring</div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/code-refactoring.png" alt="Website with info about a web dev company.">
-                        <div class="overlay">Code Refactoring</div>
-                    </div>
+                </section>
+                <section id="contact">
+                    <header><h2>contact</h2></header>
+                    <ul>
+                        <li><a href="mailto: jacobmeyers6@outlook.com" target="_blank">jacobmeyers6@outlook.com</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://github.com/vlad-kronk" target="_blank">https://github.com/vlad-kronk</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jmeyers6/" target="_blank">https://www.linkedin.com/in/jmeyers6/</a></li>
+                    </ul>
                 </section>
             </body>
         </main>
