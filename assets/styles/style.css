@@ -18,14 +18,16 @@ html {
 }
 
 nav {
-    height: 100%; /* Full-height */
+    height: 100%;
     width: 200px;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    /* Stay on top */
+    z-index: 1;
+    top: 0;
     left: 0;
     background-color: var(--eerie-black);
-    overflow-x: hidden; /* Disable horizontal scroll */
+    /* Disable horizontal scroll */
+    overflow-x: hidden;
     padding-top: 20px;
     border-right: 2px solid var(--granite-gray);
     /* border-radius: 5px; */
@@ -130,6 +132,8 @@ header h2 {
     border-radius: 10px;
 }
 
+
+/* flex container of flex containers */
 .projects-container {
     display: flex;
     align-content: center;
@@ -178,12 +182,14 @@ header h2 {
     opacity: 1;
 }
 
+/* first row is a flex container */
 .first-project {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
+/* 2nd row is also a flex container */
 .other-projects {
     display: flex;
     width: 100%;
@@ -217,6 +223,7 @@ header h2 {
     margin: 2px;
 }
 
+/* make project images scale differently */
 @media screen and (max-width: 1720px) {
     .first-project img {
         width: 700px;
@@ -230,6 +237,7 @@ header h2 {
     }
 }
 
+/* change flex direction of about me section, make it vertically oriented */
 @media screen and (max-width: 1315px) {
     #about {
         flex-direction: column;
